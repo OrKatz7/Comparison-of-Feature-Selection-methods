@@ -112,14 +112,14 @@ def get_cv_split(x_train):
     return skf,n_splits,name
 
 def get_specific_df(row):
-    p = glob.glob('/sise/liorrk-group/OrDanOfir/data/microarrays/data/*/*.csv')
+    p = glob.glob('data/microarrays/data/*/*.csv')
     sorted(p)
     return pd.read_csv(p[row]).sample(frac=1),p[row].split("/")[-1]
 
 def get_data(num_row):
     summary_data = []
 
-    for idx, csv in tqdm(enumerate(glob.glob('/sise/liorrk-group/OrDanOfir/data/microarrays/data/*/*.csv')[:num_row])):
+    for idx, csv in tqdm(enumerate(glob.glob('data/microarrays/data/*/*.csv')[:num_row])):
         # print(csv)
         df = pd.read_csv(csv)
         train_df, test_df = train_test_split(df, test_size=0.2, stratify=df['target'])
