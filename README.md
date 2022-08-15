@@ -1,5 +1,5 @@
 # Comparison-of-Feature-Selection-methods
-## install
+## Install
 ```
 pip install -r requirements.txt
 pip install -U stg/stg/python/.
