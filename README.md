@@ -13,7 +13,7 @@ pip install -U stg/stg/python/.
 Download the data from https://drive.google.com/drive/folders/19XnSh4EvTb6VRKFNzDBk94L_O5gW14H9?usp=sharing \
 move the data to ./data/microarrays/data
 ```
-Run .notebooks/process_raw_datasets.ipynb
+Run ./notebooks/process_raw_datasets.ipynb
 ```
 ## Run full pipeline
 ```
