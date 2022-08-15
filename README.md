@@ -1,5 +1,5 @@
 # Comparison-of-Feature-Selection-methods
-This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Persil](https://www.linkedin.com/in/dan-presil-674514152/), [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/)
+This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Persil](https://www.linkedin.com/in/dan-presil-674514152/) and [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/) for  Ben Gurion University of the Negev machine learning course
 
 # TL;DR
 ##TODO
