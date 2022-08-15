@@ -48,8 +48,12 @@ python3 main_kfold.py --filtering new_ensemble --n_job 64
 ## References
 
 https://github.com/runopti/stg
+
 https://runopti.github.io/stg/
+
 https://arxiv.org/abs/1706.03762?context=cs
+
 https://github.com/unnir/CancelOut
+
 
 ## license - MIT
