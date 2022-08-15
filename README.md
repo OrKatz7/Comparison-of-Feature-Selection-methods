@@ -2,7 +2,20 @@
 This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Presil](https://www.linkedin.com/in/dan-presil-674514152/) and [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/) for  Ben Gurion University of the Negev machine learning course
 
 # TL;DR
-##TODO
+In this work we implemented 3 Features selection algorithms:
+
+1. The Feature Selection using Stochastic Gates is based on the existing open-source code from the authors.
+2. FWDT is a combination of preprocessing and an adjustment to reliefF algorithm. We used the implementation of the reliefF algorithm from the following repository and adjusted the code according to the article.
+3. The Ensemble algorithm is written in …. [Dan please add]
+
+## Tests scope:
+Used 62 datasets, with 5 different sources.
+
+For each FS algorithm we used the following number of datasets:
+
+For Each FS algorithm we used [1,2,5,10,30,50,100] selected k features and 5 different classification algorithms for each fold. Overall we run 180,220 combinations of  Filtering Algorithm, Learning algorithm and Number of features selected (K). Tests. 
+
+
 
 ## Install
 ```
