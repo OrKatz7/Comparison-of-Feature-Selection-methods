@@ -1,5 +1,5 @@
 # Comparison-of-Feature-Selection-methods
-This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Persil](https://www.linkedin.com/in/dan-presil-674514152/) and [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/) for  Ben Gurion University of the Negev machine learning course
+This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Presil](https://www.linkedin.com/in/dan-presil-674514152/) and [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/) for  Ben Gurion University of the Negev machine learning course
 
 # TL;DR
 ##TODO
@@ -10,11 +10,9 @@ pip install -r requirements.txt
 pip install -U stg/stg/python/.
 ```
 ## Data
-```
-Download the data to ./data/microarrays/data from .....
-cd ./data/microarrays
-process_raw_datasets.ipynb
-```
+Download the data from https://drive.google.com/drive/folders/19XnSh4EvTb6VRKFNzDBk94L_O5gW14H9?usp=sharing \
+move the data to ./data/microarrays/data \
+Run .notebooks/process_raw_datasets.ipynb
 ## Run full pipeline
 ```
 cd notebook
