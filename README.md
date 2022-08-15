@@ -10,7 +10,7 @@ Download the data to ./data/microarrays/data from .....
 cd ./data/microarrays
 process_raw_datasets.ipynb
 ```
-## run full pipeline
+## Run full pipeline
 ```
 cd notebook
 toy example - sklearn_pipeline_toy_example.ipynb
@@ -19,7 +19,7 @@ full pipeline (GPU version) - Parallel_pipeline_gpu.ipynb
 train best models with pca - Parallel_pipeline_best.ipynb
 show the results - results.ipynb
 ```
-## run fast
+## Run fast
 
 ```
 full pipeline (Parallel) 
