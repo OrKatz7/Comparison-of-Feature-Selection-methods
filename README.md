@@ -17,18 +17,18 @@ For Each FS algorithm we used [1,2,5,10,30,50,100] selected k features and 5 dif
 
 
 
-## Install
+# Install
 ```
 pip install -r requirements.txt
 pip install -U stg/stg/python/.
 ```
-## Data
+# Data
 Download the data from https://drive.google.com/drive/folders/19XnSh4EvTb6VRKFNzDBk94L_O5gW14H9?usp=sharing \
 move the data to ./data/microarrays/data
 ```
 Run ./notebooks/process_raw_datasets.ipynb
 ```
-## Run full pipeline
+# Run full pipeline
 ```
 cd notebook
 toy example - sklearn_pipeline_toy_example.ipynb
@@ -37,7 +37,7 @@ full pipeline (GPU version) - Parallel_pipeline_gpu.ipynb
 train best models with pca - Parallel_pipeline_best.ipynb
 show the results - results.ipynb
 ```
-## Run fast
+# Run fast
 
 ```
 full pipeline (Parallel) 
@@ -52,13 +52,13 @@ python3 main_kfold.py --filtering ensemble --n_job 64
 python3 main_kfold.py --filtering new_ensemble --n_job 64
 ```
 
-## Algo explain
+# Algo explain
 
-## Improve
+# Improve
 
-## Results
+# Results
 
-## References
+# References
 
 https://github.com/runopti/stg
 
@@ -69,4 +69,4 @@ https://arxiv.org/abs/1706.03762?context=cs
 https://github.com/unnir/CancelOut
 
 
-## license - MIT
+# license - MIT
