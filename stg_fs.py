@@ -33,6 +33,7 @@ class get_ensemble_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -47,11 +48,12 @@ class get_ensemble_class_new:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
             self.gates = ensemble_of_filters_new(x,y)
-            print(self.gates.shape)
+            print(self.gates.shape)            
             np.save(f"{self.out_path}/{self.datasets}_ensemble.npy",self.gates)
         return self.gates
 
@@ -65,6 +67,7 @@ class get_FWDT_class_new:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -83,6 +86,7 @@ class get_FWDT_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -101,6 +105,7 @@ class get_mrmr_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -117,6 +122,7 @@ class get_reliefF_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -144,6 +150,7 @@ class get_RFE_SVM_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -157,6 +164,7 @@ class get_SelectFdr_class:
         self.datasets = datasets
         self.out_path = out_path
         self.alpha=alpha
+        os.makedirs(self.out_path, exist_ok=True)
         
     def __call__(self,x,y,k=None):
         if self.gates is None:
@@ -187,6 +195,8 @@ class get_stg_class:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
+        
     def __call__(self,x,y,k=None):
         if self.gates is None:
             self.gates = get_stg_gates(x,y)
@@ -198,6 +208,8 @@ class get_stg_class_new:
         self.gates = None
         self.datasets = datasets
         self.out_path = out_path
+        os.makedirs(self.out_path, exist_ok=True)
+        
     def __call__(self,x,y,k=None):
         if self.gates is None:
             self.gates = get_stg_gates(x,y,new=True)
