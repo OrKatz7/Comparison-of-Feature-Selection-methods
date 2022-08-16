@@ -79,6 +79,11 @@ python3 main_kfold.py --filtering new_ensemble --n_job 64
 
 ![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/raniking.png)
 
+The following histograms summaries the results of all combinations.
+As you can see below the STG and mainly our improvement for STG (new_STG) FS algorithm is significantly better than other algorithms. Comparing only the benchmarks FS algorithms the f_classif presents the best results.
+
+![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/best.png)
+
 # Improve
 Since the main concept of this algorithm is using simple gates in order to define which feature is relevant. Since the feature selection module is simple and based on a linear layer with gaussian distribution, our improvement was focusing on condense the module by adding attention and canceling out layers. In addition, we changed the activation function to sigmoid with the understanding it's more robust to the cancel out layer.
 
