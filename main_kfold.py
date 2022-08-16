@@ -168,7 +168,7 @@ def run_dataset(datsets_num,Filtering_Algorithm):
     ## GridSearchCV
     # fun = Filtering[Filtering_Algorithm](datasets=name,out_path=f'temp/{Filtering_Algorithm}')
     seedEverything(2022)
-    GridSearchCV_results = run_GridSearchCV(train_features,y,None,name,cv=3)
+    GridSearchCV_results = run_GridSearchCV(train_features,y,Filtering_fun,name,cv=3)
     ## Filtering_Algorithm
     outpot = None
     if run_only_cv:
