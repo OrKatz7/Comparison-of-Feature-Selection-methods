@@ -65,11 +65,11 @@ python3 main_kfold.py --filtering new_ensemble --n_job 64
 
 # Results
 
-![alt text](https://github.com/OrKatz7/RandomAlpha/blob/main/docs/Wids_SA.png)
+![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/raniking.png)
 
 # Improve
 
-![alt text](https://github.com/OrKatz7/RandomAlpha/blob/main/docs/Wids_SA.png)
+![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/improve.png)
 
 
 
