@@ -3,7 +3,12 @@ from sklearn.metrics.pairwise import pairwise_distances
 
 from skfeature.utility.util import reverse_argsort
 
+""" This is a copy/fork of reliefF implementation from https://github.com/charliec443/scikit-feature with the following modifications:
+according to the article A feature selection algorithm of decision tree based on feature weight - https://www.sciencedirect.com/science/article/pii/S0957417420306515
 
+-   changing distance measure from manhattan to euclidean
+-   using median score to filter features.
+"""
 def reliefF(X, y, mode="rank", **kwargs):
     """
     This function implements the reliefF feature selection
