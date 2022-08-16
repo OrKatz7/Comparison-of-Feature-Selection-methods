@@ -25,6 +25,15 @@ pip install -U stg/stg/python/.
 # Data
 Download the data from https://drive.google.com/drive/folders/19XnSh4EvTb6VRKFNzDBk94L_O5gW14H9?usp=sharing \
 move the data to ./data/microarrays/data
+### recommended
+Download the data from https://drive.google.com/drive/folders/1Szy1_kE7XyzIL-6K14jIgN2hwe01UUhv?usp=sharing
+temp - Intermediate files containing all the results of the models
+output - Contains the preprocessing files
+```
+unzip temp.zip
+unzip output
+```
+
 ```
 Run ./notebooks/process_raw_datasets.ipynb
 ```
