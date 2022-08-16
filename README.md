@@ -74,10 +74,8 @@ python3 main_kfold.py --filtering ensemble --n_job 64
 python3 main_kfold.py --filtering new_ensemble --n_job 64
 ```
 
-# Algo explain
-
 # Results
-AUC ranking chart (lower means better ranking)
+**AUC ranking chart (lower means better ranking)**
 
 ![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/raniking.png)
 
