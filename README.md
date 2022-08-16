@@ -63,9 +63,15 @@ python3 main_kfold.py --filtering new_ensemble --n_job 64
 
 # Algo explain
 
+# Results
+
+![alt text](https://github.com/OrKatz7/RandomAlpha/blob/main/docs/Wids_SA.png)
+
 # Improve
 
-# Results
+![alt text](https://github.com/OrKatz7/RandomAlpha/blob/main/docs/Wids_SA.png)
+
+
 
 # References
 
