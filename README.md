@@ -64,10 +64,13 @@ python3 main_kfold.py --filtering new_ensemble --n_job 64
 # Algo explain
 
 # Results
-
+AUC ranking chart (lower means better ranking)
 ![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/raniking.png)
 
 # Improve
+Since the main concept of this algorithm is using simple gates in order to define which feature is relevant. Since the feature selection module is simple and based on a linear layer with gaussian distribution, our improvement was focusing on condense the module by adding attention and canceling out layers. In addition, we changed the activation function to sigmoid with the understanding it's more robust to the cancel out layer.
+
+In comparing the best STG results per dataset with the best new_STG results, we see an improvement of 6.5% in the AUC and 1.8 in the ACC. Examining the results for specific k selected features reveals even greater improvement. For example, with 5 features selected, the ACC improvement is 11.3%. By adjusting the STG algorithm, we improve overall results and refine the information for the features as well.
 
 ![alt text](https://github.com/OrKatz7/Comparison-of-Feature-Selection-methods/blob/main/docs/improve.png)
 
