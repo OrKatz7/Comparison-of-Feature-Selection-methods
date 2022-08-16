@@ -2,11 +2,24 @@
 This repository represents open-source research developed by [Ofir Arbili](https://www.linkedin.com/in/ofir-arbili-82375179/?originalSubdomain=il/), [Dan Presil](https://www.linkedin.com/in/dan-presil-674514152/) and [Or Katz](https://www.linkedin.com/in/or-katz-9ba885114/) for  Ben Gurion University of the Negev machine learning course
 
 # TL;DR
-In this work we implemented 3 Features selection algorithms:
 
-1. The Feature Selection using Stochastic Gates is based on the existing open-source code from the authors.
-2. FWDT is a combination of preprocessing and an adjustment to reliefF algorithm. We used the implementation of the reliefF algorithm from the following repository and adjusted the code according to the article.
-3. The Ensemble algorithm is written in …. [Dan please add]
+In this study, we examined 3 different feature selection algorithms, using 62 varied microarray datasets from 5 different sources and 5 different classifiers. Classification and regression of microarray data is considered a difficult challenge because of their small sample size and large number of features. 
+
+Feature selection is the process of finding the relevant features for the classification or regression tasks based on the training data. This process ensures that the models will focus on the most significant features.
+
+The feature selection methods that were implemented, tested and improved upon in this work are:
+- Feature Selection using Stochastic Gates (STG) [1]				Part B
+- A feature selection algorithm of decision tree based on feature weight [2]		Part B
+- Ensemble of INTERACT, ReliefF and information gain (Ensamble) [3]		Part A
+
+In order to obtain test results in a reasonable amount of time, we implemented a fully parallel pipeline to support our work scope and computation heavy FS algorithms. Additionally, 62 datasets were used to obtain significant results and examine FS models.
+
+The STG is an innovative article using a new method based on DNN stochastic gates which have a significant room for improvements. In the other two articles, traditional FS algorithms were used and adapted to improve the FS process and simplify the selected features stage. Furthermore, we presented our adjusted versions for STG and FWDT. For most of the dataset, our improved STG ranked #1, while the new FWDT showed modest improvements.
+
+Feature Selection using Stochastic Gates (STG) [1] 
+A feature selection algorithm of decision tree based on feature weight [2]
+Ensemble of INTERACT, ReliefF and information gain (Ensamble) [3]
+
 
 ## Tests scope:
 Used 62 datasets, with 5 different sources.
