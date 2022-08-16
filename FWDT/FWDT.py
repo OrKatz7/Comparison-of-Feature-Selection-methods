@@ -5,6 +5,27 @@ from scipy.spatial import distance
 from skfeature.function.similarity_based import reliefF
 import reliefF_article
 import reliefF_adj
+
+"""
+This class is an implementation of the Feature selection suggested algorithm from the article:
+
+HongFang Zhou, JiaWei Zhang, YueQing Zhou, XiaoJie Guo, YiMing Ma, 2022. A feature selection algorithm of decision trees based on feature weight.
+
+https://www.sciencedirect.com/science/article/pii/S0957417420306515
+Methods
+—---------
+conti_to_discrete(self,in_col_data) 
+	Using the K-means algorithm, divide a continuous feature into 2-10 bins.
+discrete_all_features (in_data) 
+	Using the conti_to_discrete method, discretize all features
+
+features_filter_using_relief(X,y,ret_col_index=False,use_improvment=False)
+	Using the adjusted releaseF algorithm with dataset and label as input, and two additional flags: ret_col_index which returns a column index or dataset with selected features, and use_improvment which uses the original implementation from the article or our improvement.
+
+fit_transform(X,y,use_improvment=False)
+	For compatibility with Scikit-Learn
+
+"""
 class FWDT():
     
     def __init__(self,max_discerete_features=10):
@@ -74,7 +95,6 @@ class FWDT():
         ret = self.features_filter_using_relief(new_X,y,ret_col_index=True,use_improvment=use_improvment)
         return ret
     
-    #not implemented yet
     def transform(X,y):
         new_X = self.discrete_all_features(X)
         
